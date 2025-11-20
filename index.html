@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Belle House</title>
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="icon" type="image/png" href="logo.png">
+	</head>
+	<body>
+
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+			<div class="container">
+				<a class="navbar-brand d-flex align-items-center" href="#">
+					<img src="logo.png" alt="Belle House" class="logo" height="42"/>
+					<span class="ms-2 brand-text">Belle House</span>
+				</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Basculer la navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="mainNavbar">
+					<ul class="navbar-nav ms-auto align-items-lg-center">
+						<li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Projets</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">À propos</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+						<li class="nav-item ms-lg-3">
+							<a class="btn btn-avis" href="#">Demander un avis</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		
+
+		<!-- HERO: full-viewport carousel (no text overlays) -->
+		<section class="hero-carousel">
+		  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+		    <div class="carousel-inner">
+		      <div class="carousel-item active">
+		        <img src="pixasquare-4ojhpgKpS68-unsplash.jpg" class="d-block w-100" alt="Slide 1">
+		      </div>
+		      <div class="carousel-item">
+		        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1600&auto=format&fit=crop" class="d-block w-100" alt="Slide 2">
+		      </div>
+		      <div class="carousel-item">
+		        <img src="ricardo-gomez-angel-opFPVxMRpP8-unsplash.jpg" class="d-block w-100" alt="Slide 3">
+		      </div>
+		    </div>
+		    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+		      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		      <span class="visually-hidden">Précédent</span>
+		    </button>
+		    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+		      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		      <span class="visually-hidden">Suivant</span>
+		    </button>
+		  </div>
+		</section>
+    
+
+		<!-- Features section (three columns with slanted backgrounds) -->
+		<section class="features py-5">
+		  <div class="container">
+		    <div class="row g-4 text-center align-items-center">
+		      <div class="col-md-4">
+		        <div class="feature">
+		          <div class="feature-inner">
+		            <div class="icon">
+		              <!-- simple SVG icon -->
+		              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+		                <path d="M3 13h18v8H3z" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+		                <path d="M7 9V5h10v4" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+		              </svg>
+		            </div>
+		            <h3 class="mt-3">EXPERIENCE ET EXPERTISE</h3>
+		            <p class="text-muted small">Lorem ipsum dolor sit amet, consectetue auctor aliquet. Aenean sollicitudin, lorem bibendum auctor.</p>
+		          </div>
+		        </div>
+		      </div>
+		
+		      <div class="col-md-4">
+		        <div class="feature feature-highlight">
+		          <div class="feature-inner">
+		            <div class="icon">
+		              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+		                <path d="M3 7h18v10H3z" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+		                <path d="M7 3v4h10V3" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+		              </svg>
+		            </div>
+		            <h3 class="mt-3">INNOVATION CONSTANTE</h3>
+		            <p class="text-muted small">Lorem ipsum dolor sit amet, consectetue auctor aliquet. Aenean sollicitudin, lorem bibendum auctor.</p>
+		            <div class="feature-action">
+		              <button class="btn btn-circle" aria-label="voir plus">&rsaquo;</button>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		
+		      <div class="col-md-4">
+		        <div class="feature">
+		          <div class="feature-inner">
+		            <div class="icon">
+		              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+		                <path d="M12 2v20" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+		                <path d="M3 12h18" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+		              </svg>
+		            </div>
+		            <h3 class="mt-3">RESPONSABILITE PROFESSIONELLE </h3>
+		            <p class="text-muted small">Lorem ipsum dolor sit amet, consectetue auctor aliquet. Aenean sollicitudin, lorem bibendum auctor.</p>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+
+		<!-- Services/About section (image left with yellow slanted shape, text right) -->
+		<section class="about-services py-5">
+		  <div class="container">
+		    <div class="row align-items-center gy-4">
+		      <div class="col-lg-6">
+		        <div class="media-wrap">
+		          <div class="media-main">
+		            <img src="Cocontractor.jpg" alt="Team working" class="img-fluid main-img">
+		          </div>
+		          <div class="media-thumb">
+		            
+		          </div>
+		        </div>
+		      </div>
+		
+		      <div class="col-lg-6">
+		        <p class="eyebrow text-uppercase text-muted small mb-2"> BELLE HOUSE  </p>
+		        <h2 class="display-6 fw-bold">MEILLEURE ENTREPRISE DE CONSTRUCTIONS MODERNES EN AFRIQUE DE L’OUEST</h2>
+		        <p class="text-muted mt-3">Leader reconnue dans le domaine de la construction moderne en Afrique de l'Ouest, notre entreprise se distingue par son engagement inébranlable envers l'excellence, l'innovation et la durabilité. Avec une expertise unique dans la conception et la réalisation de projets architecturaux complexes, nous avons une approche multidisciplinaire offrant des solutions novatrices, qui repoussent les limites de l'ingénierie et de l'architecture.</p>
+		
+		            <strong>DG</strong>
+		            <div class="small text-muted">Directeur de BELLE HOUSE Company</div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+
+		
+
+		<!-- Services cards visual section (3 cards) -->
+		<section class="services-visual py-5">
+		  <div class="container">
+		    <div class="text-center mb-5">
+		      
+		      <h2 class="fw-bold mb-0">NOS <span class="text-accent">SERVICES</span></h2>
+		    </div>
+		
+		    <div class="row g-4 justify-content-center">
+			<div class="col-md-6 col-lg-4">
+				<article class="service-card h-100 service-residential" aria-live="polite">
+					<div class="card-inner">
+						<div class="card-front">
+							<div class="card-media">
+								<img src="howard-bouchevereau-042Srn0-82o-unsplash.jpg" alt="Residential" class="card-media-img">
+							</div>
+							<div class="card-body p-4">
+								<div class="icon-circle">
+									<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 13h18v8H3z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								</div>
+								<h5 class="mt-3">Architecture</h5>
+								<p class="text-muted small">Nous réalisons des projets résidentiels de qualité en accordant une attention particulière aux détails et aux finitions..</p>
+								<a class="learn-more mt-3 d-inline-block" href="#" data-action="flip">Learn more <span class="arrow">→</span></a>
+							</div>
+						</div>
+						<div class="card-back">
+							<div class="card-body p-4 d-flex flex-column justify-content-center">
+								<p class="mb-3">Construction résidentielle : maisons complètes construites avec des matériaux de haute qualité, gestion de projet et finitions clés en main. Nous nous occupons des permis, de la coordination et de l'inspection finale.</p>
+								<div class="mt-2">
+									<button class="btn btn-sm btn-outline-secondary btn-close" type="button">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+		
+			<div class="col-md-6 col-lg-4">
+				<article class="service-card h-100 service-commercial" aria-live="polite">
+					<div class="card-inner">
+						<div class="card-front">
+							<div class="card-media">
+								<img src="hutomo-abrianto-9mPl0Zo7_gQ-unsplash.jpg" alt="Commercial" class="card-media-img">
+							</div>
+							<div class="card-body p-4">
+								<div class="icon-circle">
+									<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7h18v10H3z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								</div>
+								<h5 class="mt-3">Rénovation</h5>
+								<p class="text-muted small">Équipes expérimentées pour les constructions commerciales de moyenne et grande envergure avec une livraison fiable.</p>
+								<a class="learn-more mt-3 d-inline-block" href="#" data-action="flip">Learn more <span class="arrow">→</span></a>
+							</div>
+						</div>
+						<div class="card-back">
+							<div class="card-body p-4 d-flex flex-column justify-content-center">
+								<p class="mb-3">Construction commerciale : nous gérons des équipes pluridisciplinaires pour des projets de bureaux, de commerces et d'industries, en respectant les délais et les spécifications.</p>
+								<div class="mt-2">
+									<button class="btn btn-sm btn-outline-secondary btn-close" type="button">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+
+      <div class="col-md-6 col-lg-4">
+				<article class="service-card h-100 service-renovation" aria-live="polite">
+					<div class="card-inner">
+						<div class="card-front">
+							<div class="card-media">
+								<img src="tolu-olubode-PlBsJ5MybGc-unsplash.jpg" alt="Commercial" class="card-media-img">
+							</div>
+							<div class="card-body p-4">
+								<div class="icon-circle">
+									<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7h18v10H3z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								</div>
+								<h5 class="mt-3">Construction</h5>
+								<p class="text-muted small">Équipes expérimentées pour les constructions commerciales de moyenne et grande envergure avec une livraison fiable.</p>
+								<a class="learn-more mt-3 d-inline-block" href="#" data-action="flip">Learn more <span class="arrow">→</span></a>
+							</div>
+						</div>
+						<div class="card-back">
+							<div class="card-body p-4 d-flex flex-column justify-content-center">
+								<p class="mb-3">Construction commerciale : nous gérons des équipes pluridisciplinaires pour des projets de bureaux, de commerces et d'industries, en respectant les délais et les spécifications..</p>
+								<div class="mt-2">
+									<button class="btn btn-sm btn-outline-secondary btn-close" type="button">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+		
+			<div class="col-md-6 col-lg-4">
+				<article class="service-card h-100" aria-live="polite">
+					<div class="card-inner">
+						<div class="card-front">
+							<div class="card-media">
+								<img src="Ing.jpg" alt="Renovation" class="card-media-img">
+							</div>
+							<div class="card-body p-4">
+								<div class="icon-circle">
+									<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v20" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								</div>
+								<h5 class="mt-3">Ferraillage</h5>
+								<p class="text-muted small">Des petites améliorations aux rénovations complètes, nous améliorons les espaces existants de manière réfléchie..</p>
+								<a class="learn-more mt-3 d-inline-block" href="#" data-action="flip">Learn more <span class="arrow">→</span></a>
+							</div>
+						</div>
+						<div class="card-back">
+							<div class="card-body p-4 d-flex flex-column justify-content-center">
+								<p class="mb-3">Rénovation et réaménagement : des solutions sur mesure pour rafraîchir les intérieurs, moderniser les systèmes et reconfigurer les agencements avec un minimum de perturbations.</p>
+								<div class="mt-2">
+									<button class="btn btn-sm btn-outline-secondary btn-close" type="button">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+		    </div>
+		  </div>
+		</section>
+
+		<!-- Projects Gallery -->
+		<section class="projects-gallery py-5">
+		  <div class="container">
+		    <div class="text-center mb-5">
+
+			<h2 class="fw-bold mb-0">NOS <span class="text-accent">PROJETS</span></h2>
+		     
+		    </div>
+		
+		    <div class="row g-4">
+		      <div class="col-sm-6 col-lg-4">
+		        <article class="gallery-card">
+		          <div class="thumb">
+		            <img src="virender-singh-Zi7xTWDoiic-unsplash.jpg" alt="Project 1">
+		          </div>
+		          <div class="card-meta d-flex align-items-center justify-content-between px-3 py-3 bg-white">
+		            <div>
+		              <h5 class="mb-1">South Sabah Al-Ahmad Masterplan</h5>
+		              <small class="text-muted">2040 - Southern Kuwait, Kuwait</small>
+		            </div>
+		            <a class="btn-arrow" href="#" aria-label="Open project"><span>→</span></a>
+		          </div>
+		        </article>
+		      </div>
+		
+		      <div class="col-sm-6 col-lg-4">
+		        <article class="gallery-card">
+		          <div class="thumb">
+		            <img src="salman-saqib-WaC-JFfF21M-unsplash.jpg" alt="Project 2">
+		          </div>
+		          <div class="card-meta d-flex align-items-center justify-content-between px-3 py-3 bg-white">
+		            <div>
+		              <h5 class="mb-1">Changfeng Mixed Use Development</h5>
+		              <small class="text-muted">2035 - Shanghai, China</small>
+		            </div>
+		            <a class="btn-arrow" href="#" aria-label="Open project"><span>→</span></a>
+		          </div>
+		        </article>
+		      </div>
+		
+		      <div class="col-sm-6 col-lg-4">
+		        <article class="gallery-card">
+		          <div class="thumb">
+		            <img src="willian-reis-6WrnGOPgIIs-unsplash.jpg" alt="Project 3">
+		          </div>
+		          <div class="card-meta d-flex align-items-center justify-content-between px-3 py-3 bg-white">
+		            <div>
+		              <h5 class="mb-1">California High-Speed Rail</h5>
+		              <small class="text-muted">2030 - California, USA</small>
+		            </div>
+		            <a class="btn-arrow" href="#" aria-label="Open project"><span>→</span></a>
+		          </div>
+		        </article>
+		      </div>
+		
+		      <div class="col-sm-6 col-lg-4">
+		        <article class="gallery-card">
+		          <div class="thumb">
+		            <img src="willian-reis-JwSo36TmqFA-unsplash.jpg" alt="Project 4">
+		          </div>
+		          <div class="card-meta d-flex align-items-center justify-content-between px-3 py-3 bg-white">
+		            <div>
+		              <h5 class="mb-1">Lakeside Residences</h5>
+		              <small class="text-muted">2028 - Coastal, USA</small>
+		            </div>
+		            <a class="btn-arrow" href="#" aria-label="Open project"><span>→</span></a>
+		          </div>
+		        </article>
+		      </div>
+		
+		      <div class="col-sm-6 col-lg-4">
+		        <article class="gallery-card">
+		          <div class="thumb">
+		            <img src="pixasquare-4ojhpgKpS68-unsplash.jpg" alt="Project 5">
+		          </div>
+		          <div class="card-meta d-flex align-items-center justify-content-between px-3 py-3 bg-white">
+		            <div>
+		              <h5 class="mb-1">Urban Retail Blocks</h5>
+		              <small class="text-muted">2026 - Downtown, USA</small>
+		            </div>
+		            <a class="btn-arrow" href="#" aria-label="Open project"><span>→</span></a>
+		          </div>
+		        </article>
+		      </div>
+		
+		      <div class="col-sm-6 col-lg-4">
+		        <article class="gallery-card">
+		          <div class="thumb">
+		            <img src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?q=80&w=1400&auto=format&fit=crop" alt="Project 6">
+		          </div>
+		          <div class="card-meta d-flex align-items-center justify-content-between px-3 py-3 bg-white">
+		            <div>
+		              <h5 class="mb-1">Green Atrium Workspace</h5>
+		              <small class="text-muted">2025 - City Centre</small>
+		            </div>
+		            <a class="btn-arrow" href="#" aria-label="Open project"><span>→</span></a>
+		          </div>
+		        </article>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+
+		<!-- Testimonials section -->
+		<section class="testimonials" id="testimonials">
+		  <div class="container">
+		    <div class="row align-items-center gy-4">
+		      <div class="col-lg-6 testimonial-copy">
+		        <p class="eyebrow text-uppercase mb-2">TÉMOIGNAGES</p>
+		        <h2 class="fw-bold mb-3">Avis des clients</h2>
+		        <p id="testimonialText">
+					
+					À mon avis, la plus grande récompense pour tout projet de rénovation est de pouvoir vivre la transformation du début à la fin. J'aime voir comment une rénovation peut passer d'une idée à une réalité.
+		        </p>
+		        <div class="testimonial-quote d-flex align-items-center mt-4">
+		          <span class="quote-icon" aria-hidden="true">“</span>
+		          <div>
+		            <strong id="testimonialName">Marko Marlee</strong>
+		            <div class="small text-muted" id="testimonialRole">Chairman, Building Corp.</div>
+		          </div>
+		        </div>
+		        <div class="testimonial-indicators mt-4" role="tablist">
+		          <button class="active" type="button" data-index="0" aria-label="Avis 1"></button>
+		          <button type="button" data-index="1" aria-label="Avis 2"></button>
+		          <button type="button" data-index="2" aria-label="Avis 3"></button>
+		          <button type="button" data-index="3" aria-label="Avis 4"></button>
+		          <button type="button" data-index="4" aria-label="Avis 5"></button>
+		        </div>
+		      </div>
+		      <div class="col-lg-6">
+		        <div class="testimonial-visual position-relative">
+		          <button class="testimonial-avatar main active" type="button" data-index="0" aria-label="Marko Marlee">
+		            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&auto=format&fit=crop" alt="Marko Marlee">
+		          </button>
+		          <button class="testimonial-avatar small" type="button" data-index="1" aria-label="Sofia Ellis">
+		            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&auto=format&fit=crop" alt="Sofia Ellis">
+		          </button>
+		          <button class="testimonial-avatar small" type="button" data-index="2" aria-label="Liam Patel">
+		            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=300&auto=format&fit=crop" alt="Liam Patel">
+		          </button>
+		          <button class="testimonial-avatar small" type="button" data-index="3" aria-label="Nia Brooks">
+		            <img src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?w=300&auto=format&fit=crop" alt="Nia Brooks">
+		          </button>
+		          <button class="testimonial-avatar small" type="button" data-index="4" aria-label="Alex Kim">
+		            <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=300&auto=format&fit=crop" alt="Alex Kim">
+		          </button>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+
+		<footer class="site-footer">
+		  <div class="container text-center">
+		    <img src="logo.png" alt="Belle House" class="footer-logo">
+			<span class="ms-2 brand-text">Belle House</span>
+		    <div class="social-links my-3">
+		      <a href="#" class="social-facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+		      <a href="#" class="social-linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+		      <a href="#" class="social-instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+		      <a href="#" class="social-twitter" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+		    </div>
+		    <p class="small">© <span id="currentYear"></span> Belle House — Construire différemment.</p>
+		  </div>
+		</footer>
+
+		<!-- Bootstrap JS bundle -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script>
+		  // Flip card toggle: click or keyboard (Enter/Space)
+		  document.addEventListener('DOMContentLoaded', function () {
+		    document.querySelectorAll('.flip-card').forEach(function(card){
+		      card.addEventListener('click', function(){
+		        var pressed = this.getAttribute('aria-pressed') === 'true';
+		        this.setAttribute('aria-pressed', String(!pressed));
+		        this.classList.toggle('is-flipped');
+		      });
+		      card.addEventListener('keydown', function(e){
+		        if (e.key === 'Enter' || e.key === ' ') {
+		          e.preventDefault();
+		          this.click();
+		        }
+		      });
+		    });
+
+		    // Services cards: Learn more flips the card to show description; Close flips back
+		    document.querySelectorAll('.learn-more').forEach(function(link){
+		      link.addEventListener('click', function(e){
+		        e.preventDefault();
+		        var card = this.closest('.service-card');
+		        if (!card) return;
+		        card.classList.add('is-flipped');
+		        // focus close button for accessibility
+		        var closeBtn = card.querySelector('.btn-close');
+		        if (closeBtn) closeBtn.focus();
+		      });
+		    });
+
+		    document.querySelectorAll('.btn-close').forEach(function(btn){
+		      btn.addEventListener('click', function(){
+		        var card = this.closest('.service-card');
+		        if (!card) return;
+		        card.classList.remove('is-flipped');
+		        var trigger = card.querySelector('.learn-more');
+		        if (trigger) trigger.focus();
+		      });
+		    });
+
+		    // Testimonials logic
+		    const testimonialText = document.getElementById('testimonialText');
+		    const testimonialName = document.getElementById('testimonialName');
+		    const testimonialRole = document.getElementById('testimonialRole');
+		    const avatarButtons = document.querySelectorAll('.testimonial-avatar');
+		    const indicatorButtons = document.querySelectorAll('.testimonial-indicators button');
+
+		    if (testimonialText && avatarButtons.length) {
+		      const testimonials = [
+		        {
+		          text: 'To my mind, the greatest reward for any renovation project is being able to experience the transformation from beginning to end. I enjoy getting to see how a renovation can go from an idea to a reality.',
+		          name: 'Marko Marlee',
+		          role: 'Chairman, Building Corp.'
+		        },
+		        {
+		          text: 'Belle House delivered our flagship headquarters with flawless execution. Their sense of design elevated the entire experience for our teams and clients.',
+		          name: 'Sofia Ellis',
+		          role: 'CEO, Horizon Studio'
+		        },
+		        {
+		          text: 'They blend creativity and engineering rigor. Every milestone was transparent, every detail anticipated.',
+		          name: 'Liam Patel',
+		          role: 'Managing Partner, Nova Partners'
+		        },
+		        {
+		          text: 'From concept to final punch list, the collaboration felt effortless. The result exceeded our expectations.',
+		          name: 'Nia Brooks',
+		          role: 'Creative Director, Forma Collective'
+		        },
+		        {
+		          text: 'Their craftsmanship and respect for deadlines make Belle House an essential partner on our developments.',
+		          name: 'Alex Kim',
+		          role: 'VP Development, UrbanWorks'
+		        }
+		      ];
+
+		      const setActiveTestimonial = (index) => {
+		        const item = testimonials[index];
+		        testimonialText.textContent = item.text;
+		        testimonialName.textContent = item.name;
+		        testimonialRole.textContent = item.role;
+
+		        avatarButtons.forEach(btn => btn.classList.toggle('active', Number(btn.dataset.index) === index));
+		        indicatorButtons.forEach(btn => btn.classList.toggle('active', Number(btn.dataset.index) === index));
+		      };
+
+		      avatarButtons.forEach(btn => {
+		        btn.addEventListener('click', () => setActiveTestimonial(Number(btn.dataset.index)));
+		      });
+
+		      indicatorButtons.forEach(btn => {
+		        btn.addEventListener('click', () => setActiveTestimonial(Number(btn.dataset.index)));
+		      });
+
+		      setActiveTestimonial(0);
+		    }
+
+		    const yearEl = document.getElementById('currentYear');
+		    if (yearEl) {
+		      yearEl.textContent = new Date().getFullYear();
+		    }
+		  });
+		</script>
+	</body>
+	</html>
+
